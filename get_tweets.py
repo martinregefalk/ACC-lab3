@@ -52,6 +52,7 @@ def all_tweets():
 	number_of_files = 0
 	for filename in os.listdir('/mnt/volume/data/'):
 		number_of_files +=1
+		print(number_of_files)
 		try:
 			temp = get_tweets('/mnt/volume/data/'+filename)
 			for i in range(len(final_count)):
